@@ -213,6 +213,7 @@ main {
     text-decoration: none;
     background-color: var(--color-3);
     border: 1px solid #3aa6d4;
+    transition: .5s;
 }
 
 .price:hover {
@@ -304,16 +305,16 @@ main {
 }
 
 .destination:nth-of-type(1) {
-    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/venice.jpg") no-repeat;
+    background: url("https://monograms.com/user/images/packageselector/europe_large.png") no-repeat;
 }
 
 .destination:nth-of-type(2) {
-    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/new-york.jpg") no-repeat;
+    background: url("http://static5.businessinsider.com/image/51e58b576bb3f74147000006-480/new-york-city-skyline-and-statue-of-liberty.jpg") no-repeat;
 }
 
 .destination:nth-of-type(3) {
     margin-right: 0;
-    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/paris.jpg") no-repeat;
+    background: url("https://calendarmedia.blob.core.windows.net/assets/d1a9636f-b2a2-4331-ba4e-478a4f5c7a43-small.jpg") no-repeat;
 }
 
 article {
@@ -325,12 +326,15 @@ article {
     padding: 21px 9px 18px 9px;
     text-align: justify;
     background-color: #193149;
+    transition: 1s;
 }
+
 
 .destination:hover>article {
     opacity: 1;
     visibility: visible;
     transition: var(--tansition);
+    
 }
 
 .btn {
@@ -350,6 +354,7 @@ article {
     background-color: var(--color-2);
     border: 1px solid #8b8c92;
     border-radius: 5px;
+    transition: .5s;
 }
 
 .btn:hover {
@@ -387,6 +392,53 @@ article {
   box-shadow: 0 0 80px rgb(0, 0, 0); 
 }
 
+.bottom2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    background-color: #2d435a;
+    
+    height: 110px;
+    font-family: var(--font-3);
+    font-size: 20px;
+    }
+    .item-bottom {
+      padding-top: 10px;
+    }
+    .bottom2 li {
+    color: white;
+  }
+/*-------------------------------------------------------------------------------------*/
+  .sprite {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 385px;
+    margin-bottom: 75px;
+}
+
+.sprite li {
+    float: left;
+    list-style: none;
+}
+
+.sprite a {
+    display: block;
+    height: 52px;
+    width: 52px;
+    background: url("https://image.ibb.co/c7MZxb/css_sprites_t.png") 0 0 no-repeat;
+}
+.sprite .facebook {
+    background-position: -62px 0;
+}
+.sprite .google {
+    background-position: -120px 0;
+}
+.sprite .in {
+    background-position: -180px 0;
+}
+
 </style>
 </head>
 <body>
@@ -415,13 +467,13 @@ article {
                     <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Gallery/index.html">gallery</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#">tours</a>
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Tours/index.html">tours</a>
                 </li>
                 <li class="item">
                     <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Blog/index.html">blog</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#">contacts</a>
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Contacts/index.html">contacts</a>
                 </li>
             </ul>
         </nav>
@@ -458,10 +510,47 @@ article {
                         <a class="btn" href="#">Details</a>
                     </article>
                 </div>
+
+                
+
             </section>
             <a class="to-top" href="#"></a>
+            
         </main>
-    </div>
+        <div class="bottom2">
+            <ul>
+              <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>+380663056200</li>
+            </ul>
+        </div>
+        <div class="footter2">
+        </div>
+            <ul class="sprite">
+                <li><a class="twitter" href="https://twitter.com"></a></li>
+                <li><a class="facebook" href="https://www.facebook.com"></a></li>
+                <li><a class="google" href="https://plus.google.com"></a></li>
+                <li><a class="in" href="#"></a></li>
+            </ul>
+        </div>
+    
+    
     
     
 </body>
