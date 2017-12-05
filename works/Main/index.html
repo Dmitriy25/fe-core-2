@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework-5</title>
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+<style>
+  body {
+    background: #ffffff url(https://files.slack.com/files-tmb/T79DPALD9-F7N6VG6NR-b20b8064ca/more_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper {
+    width: 1024px;
+    min-height: 1000px;
+    margin: auto
+  }
+  main {
+    background: #ffffff;
+    width: 1024px;
+    min-height: 1000px;
+  }
+  
+  :root {
+    --font-1: "Dorsa", sans-serif;
+    --font-2: "Pathway Gothic One", sans-serif;
+    --font-3: "Open Sans Condensed", sans-serif;
+    --font-4: "Arial", sans-serif;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --bord-rad: 50%;
+    --diam-logo: 140px;
+    --tansition: 0.5s;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding-top: 44px;
+    padding-bottom: 60px;
+    background: url(https://files.slack.com/files-tmb/T79DPALD9-F7N6VG6NR-b20b8064ca/more_720.jpg) no-repeat;
+    background-size: cover;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    width: var(--diam-logo);
+    height: var(--diam-logo);
+    margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
+    font-size: calc((var(--diam-logo) / 2) - 10px);
+    font-family: var(--font-1);
+    line-height: var(--diam-logo);
+    text-align: center;
+    text-transform: uppercase;    
+    background-color: var(--color-2);
+    border-radius: var(--bord-rad);
+}
+nav {
+    padding-top: calc((var(--diam-logo) / 2) - 20px);
+    margin-bottom: 120px;
+}
+.menu {
+    padding-left: 101px;
+    margin-bottom: 49px;
+}
+.menu .item {
+    display: inline-block;
+    margin-right: 59px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.item:last-of-type {
+    margin-right: 0;
+}
+.item:nth-of-type(3) {
+    margin-right: 220px;
+}
+li {
+    list-style: none;
+}
+.link, .sub-link {
+    font-family: var(--font-2);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.link {
+    font-size: 28px;
+    color: var(--color-2);
+}
+.link:hover {
+    color: var(--color-1);
+    transition: var(--tansition);
+}
+.sub-link {
+    font-size: 20px;
+    color: #6b7488;
+}
+.sub-link:hover {
+    color: var(--color-3);
+    transition: var(--tansition);
+}
+.sub-menu {
+    line-height: 20px;
+}
+.sub-menu .sub-item {
+    text-align: center;
+}
+.menu .item:nth-of-type(2) {
+    position: relative;
+}
+.sub:hover>.sub-menu {
+    display: block;
+}
+.sub-menu {
+    position: absolute;
+    top: 45px;
+    left: -15px;
+    display: none;
+    width: 66px;
+    height: 88px;
+    padding: 7px;
+    background-color: var(--color-2);
+    background-size: cover;    
+    border-radius: 3px;
+}
+.sub-menu:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 37px;
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid var(--color-2);
+  border-left: 4px solid transparent;
+}
+.sub-item {
+    margin-bottom: 9px;
+}
+main {
+    max-width: 902px;
+    padding: 58px 61px 136px 61px;
+    background-color: var(--color-2);
+}
+.top {
+    position: relative;
+    width: 902px;
+    height: 579px;
+    margin-bottom: 57px;
+}
+ .top h2, .price {
+    position: absolute;
+    font-family: var(--font-2);
+    text-transform: uppercase;
+}
+.top h2 {
+    top: 218px;
+    width: 223px;
+    height: 59px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 59px;
+    color: var(--color-1);
+    text-align: center;    
+    background-color: var(--color-2);
+    border: 1px solid #d5d3d1;
+}
+.price {
+    top: 278px;
+    display: block;
+    width: 274px;
+    height: 58px;
+    font-size: 34px;
+    line-height: 58px;
+    color: var(--color-2);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-3);
+    border: 1px solid #3aa6d4;
+    transition: .5s;
+}
+.price:hover {
+    color: var(--color-1);
+    transition: var(--tansition);
+}
+.slider {
+    position: absolute;
+    bottom: 70px;
+    left: 36px;
+    font-size: 0;
+}
+.slide-left, .slide-right {
+    display: inline-block;
+    width: 45px;
+    height: 90px;
+    font-size: 20px;
+  }
+  
+  .slide-left:before, .slide-right:after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    color: var(--color-2);
+    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/slider-sprite.png") no-repeat;
+  }
+  
+  .slide-left:before {
+    border-radius: 46px 0px 00px 46px;
+  }
+  
+  .slide-right:after {
+    background-position: -46px 0;
+    border-radius: 0px 46px 46px 0px;
+  }
+  
+  .slide-left:hover, .slide-right:hover {
+    opacity: 0.75;
+    transition: var(--tansition);
+  }
+.bottom {
+    font-size: 0;
+}
+.top-dest {
+    display: block;
+    max-width: 165px;
+    margin-bottom: 69px;
+    font-family: var(--font-2);
+    font-size: 30px;
+    color: var(--color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.top-dest:hover {
+    color: var(--color-3);
+    transition: var(--tansition);
+}
+.city { 
+    width: 129px;
+    margin-bottom: 10px;
+    font-family: var(--font-3);
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--color-2);
+    text-align: center;
+    text-transform: uppercase;
+}
+.destination {
+    display: inline-block;
+    width: 288px;
+    height: 270px;
+    margin-right: 19px;
+    vertical-align: bottom;
+}
+.information {
+    font-family: var(--font-4);
+    font-size: 9px;
+    line-height: 15.21px;
+    color: #cbc6c6;
+}
+.destination:nth-of-type(1) {
+    background: url("https://monograms.com/user/images/packageselector/europe_large.png") no-repeat;
+}
+.destination:nth-of-type(2) {
+    background: url("http://static5.businessinsider.com/image/51e58b576bb3f74147000006-480/new-york-city-skyline-and-statue-of-liberty.jpg") no-repeat;
+}
+.destination:nth-of-type(3) {
+    margin-right: 0;
+    background: url("https://calendarmedia.blob.core.windows.net/assets/d1a9636f-b2a2-4331-ba4e-478a4f5c7a43-small.jpg") no-repeat;
+}
+article {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    width: 129px;
+    height: 231px;
+    padding: 21px 9px 18px 9px;
+    text-align: justify;
+    background-color: #193149;
+    transition: 1s;
+}
+.destination:hover>article {
+    opacity: 1;
+    visibility: visible;
+    transition: var(--tansition);
+    
+}
+.btn {
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+    display: inline-block;
+    width: 65px;
+    height: 24px;
+    font-family: var(--font-4);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-2);
+    border: 1px solid #8b8c92;
+    border-radius: 5px;
+    transition: .5s;
+}
+.btn:hover {
+    color: var(--color-2);
+    background-color: var(--color-3);
+    transition: var(--tansition);
+}
+.to-top {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/to-Top.png") no-repeat; 
+    border-radius: var(--bord-rad);  
+}
+.to-top:hover {
+    opacity: 0.55;
+    transition: var(--tansition);
+}
+    .logo {
+  transition: .3s;
+  width: 138px;
+  height: 138px;
+  left: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left; 
+}
+.logo:hover {
+  box-shadow: 0 0 80px rgb(0, 0, 0); 
+}
+.bottom2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    background-color: #2d435a;
+    
+    height: 110px;
+    font-family: var(--font-3);
+    font-size: 20px;
+    }
+    .item-bottom {
+      padding-top: 10px;
+    }
+    .bottom2 li {
+    color: white;
+  }
+/*-------------------------------------------------------------------------------------*/
+  .sprite {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 385px;
+    margin-bottom: 75px;
+}
+.sprite li {
+    float: left;
+    list-style: none;
+}
+.sprite a {
+    display: block;
+    height: 52px;
+    width: 52px;
+    background: url("https://image.ibb.co/c7MZxb/css_sprites_t.png") 0 0 no-repeat;
+}
+.sprite .facebook {
+    background-position: -62px 0;
+}
+.sprite .google {
+    background-position: -120px 0;
+}
+.sprite .in {
+    background-position: -180px 0;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="logo">journey</header>
+        <nav>
+            <ul class="menu">
+                <li class="item">
+                    <a class="link" href="#">home</a>
+                </li>
+                <li class="item sub">
+                    <a class="link" href="#">about</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a class="sub-link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/About/index.html#">agency</a>
+                        </li>
+                        <li class="sub-item">
+                            <a class="sub-link" href="#">news</a>
+                        </li>
+                        <li class="sub-item">
+                            <a class="sub-link" href="#">team</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Gallery/index.html">gallery</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Tours/index.html">tours</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Blog/index.html">blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Contacts/index.html">contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="top">
+                <h2>there are plenty of spaces</h2>
+                <a class="price" href="#">that are worth seeing</a>
+                <img src="img/beach.jpg" alt="image-1">
+                <div class="slider">
+                    <a class="slide-left" href="#"></a>
+                    <a class="slide-right" href="#"></a>
+                </div>
+            </section>
+            <section class="bottom">
+                <a class="top-dest" href="#">top destinations</a>
+                <div class="destination">
+                    <article>
+                        <h3 class="city">Venice</h3>
+                        <p class="information">Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam bibendum olor quis malesuadivamu.</p>
+                        <a class="btn" href="#">Details</a>
+                    </article>
+                </div>
+                <div class="destination">
+                    <article>
+                        <h3 class="city">New York</h3>
+                        <p class="information">Psum dolor sit ametylo gerto consectetur ertori hykill holit adipiscing lity. Donecto rtopil pellentesque osueremo dasi massa eget cotyll kollit asec emmodem auctor geteq tiloli. Aliquam dapibus neclol nami wertoli elittro eget vulpoli no  utaterbil congue turpis in su  scipit mintyulitiam ac. </p>
+                        <a class="btn" href="#">Details</a>
+                    </article>
+                </div>
+                <div class="destination">
+                    <article>
+                        <h3 class="city">Paris</h3>
+                        <p class="information">Lorem ipsum dolor sityl trew amet, consectipiscinge elitii. Ham nec urnageri dignissim adipiscing jul quam eleifend, mattisel arcu. Curabitur nolol luctusol ipsum sed massa lil baw gerty ultrices non hyw ercursuswer quam itrabitur. Neque risus, cursus a porta eu, elementum id dolor.</p>
+                        <a class="btn" href="#">Details</a>
+                    </article>
+                </div>
+
+                
+
+            </section>
+            <a class="to-top" href="#"></a>
+            
+        </main>
+        <div class="bottom2">
+            <ul>
+              <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <ul>
+                <li class="item-bottom"></li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>+380663056200</li>
+            </ul>
+        </div>
+        <div class="footter2">
+        </div>
+            <ul class="sprite">
+                <li><a class="twitter" href="https://twitter.com"></a></li>
+                <li><a class="facebook" href="https://www.facebook.com"></a></li>
+                <li><a class="google" href="https://plus.google.com"></a></li>
+                <li><a class="in" href="#"></a></li>
+            </ul>
+        </div>
+</body>
+
+</html>

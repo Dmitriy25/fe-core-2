@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <style>
+body {
+      background: #ffffff url(https://files.slack.com/files-tmb/T79DPALD9-F7N6VG6NR-b20b8064ca/more_720.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .main {
+      margin-top: 120px;  
+      width: 1024px;
+      min-height: 1000px;
+      background: white;
+      box-sizing: border-box;
+    }
+    .h-pad {
+  padding: 44px 78px 85px 60px;
+}
+.wrapper {
+        width: 1024px;
+        min-height: 1000px;
+        margin: auto
+      }
+      :root {
+        --font-1: "Dorsa", sans-serif;
+        --font-2: "Pathway Gothic One", sans-serif;
+        --font-3: "Open Sans Condensed", sans-serif;
+        --font-4: "Arial", sans-serif;
+        --color-1: #263555;
+        --color-2: #ffffff;
+        --color-3: #38afe5;
+        --bord-rad: 50%;
+        --diam-logo: 140px;
+        --tansition: 0.5s;
+    }
+    
+    /*-------------------------------------------------------------------------------------*/
+    .logo {
+      position: absolute;
+      left: 50%;
+      width: var(--diam-logo);
+      height: var(--diam-logo);
+      margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
+      font-size: calc((var(--diam-logo) / 2) - 10px);
+      font-family: var(--font-1);
+      line-height: var(--diam-logo);
+      text-align: center;
+      text-transform: uppercase;    
+      background-color: var(--color-2);
+      border-radius: var(--bord-rad);
+      margin-top: 44px;
+      transition: .3s;
+  }
+  
+  nav {
+      padding-top: calc((var(--diam-logo) / 2) - 20px);
+      margin-bottom: 120px;
+  }
+  
+  .menu {
+      padding-left: 101px;
+      margin-bottom: 49px;
+      margin-top: 44px;
+      transition: .3s;
+  }
+  
+  .menu .item {
+      display: inline-block;
+      margin-right: 59px;
+      line-height: 40px;
+      vertical-align: middle;
+      transition: .3s;
+  }
+  
+  .item:last-of-type {
+      margin-right: 0;
+  }
+  
+  .item:nth-of-type(3) {
+      margin-right: 220px;
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+  .link, .sub-link {
+      font-family: var(--font-2);
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  
+  .link {
+      font-size: 28px;
+      color: var(--color-2);
+      transition: .4s;
+  }
+  
+  .link:hover {
+      color: var(--color-1);
+      transition: var(--tansition);
+  }
+  
+  .sub-link {
+      font-size: 20px;
+      color: #6b7488;
+      transition: .3s;
+  }
+  
+  .sub-link:hover {
+      color: var(--color-3);
+      transition: var(--tansition);
+  }
+  
+  .sub-menu {
+      line-height: 20px;
+      transition: .3s;
+  }
+  
+  .sub-menu .sub-item {
+      text-align: center;
+      transition: .3s;
+  }
+  
+  .menu .item:nth-of-type(2) {
+      position: relative;
+  }
+  
+  .sub:hover>.sub-menu {
+      display: block;
+      transition: .3s;
+  }
+  
+  .sub-menu {
+      position: absolute;
+      top: 45px;
+      left: -15px;
+      display: none;
+      width: 66px;
+      height: 88px;
+      padding: 7px;
+      background-color: var(--color-2);
+      background-size: cover;    
+      border-radius: 3px;
+      transition: .3s;
+  }
+  
+  .sub-menu:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 37px;
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid var(--color-2);
+    border-left: 4px solid transparent;
+    transition: .3s;
+  }
+  .sub-menu::before:hover {
+    transition: .3s;
+  }
+  .sub-item {
+      margin-bottom: 9px;
+      transition: .3s;
+  }
+  .sub-menu::after :hover {
+    transition: .3s;
+  }
+  .item-sub:hover {
+    transition: 3s;
+  }
+/*-------------------------------------------------------------------------------------*/
+
+  .logo {
+  transition: .3s;
+  width: 138px;
+  height: 138px;
+  left: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left; 
+}
+.logo:hover {
+  box-shadow: 0 0 80px rgb(0, 0, 0); 
+}
+/*-------------------------------------------------------------------------------------*/
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  background-color: #2d435a;
+  margin-top: 765px;
+  height: 110px;
+  font-family: var(--font-3);
+  font-size: 20px;
+  }
+  .item-bottom {
+    padding-top: 10px;
+  }
+  .bottom li {
+  color: white;
+}
+/*-------------------------------------------------------------------------------------*/
+  .sprite {
+    position: relative;
+    overflow: hidden;
+    margin-left: 375px;
+}
+
+.sprite li {
+    float: left;
+    list-style: none;
+}
+
+.sprite a {
+    display: block;
+    height: 52px;
+    width: 52px;
+    background: url("https://image.ibb.co/c7MZxb/css_sprites_t.png") 0 0 no-repeat;
+}
+
+.sprite .facebook {
+    background-position: -62px 0;
+}
+.sprite .google {
+    background-position: -120px 0;
+}
+.sprite .in {
+    background-position: -180px 0;
+}
+/*-------------------------------------------------------------------------------------*/
+.imges {
+    float: left;
+    margin-top: 160px;
+    position: relative;
+}
+.imges :hover {
+    filter: brightness(65%);
+    transition: 0.5s;
+}
+.q {
+    margin-top: 56px;
+    margin-bottom: 50px;
+}
+.w {
+    margin-bottom: 50px;
+    transition: 1s;
+}
+.r {
+    margin-bottom: 50px;
+}
+.t {
+    margin-bottom: 50px;
+}
+.u {
+    margin-bottom: 50px;
+}
+.i {
+    margin-bottom: 50px;
+}
+/*-------------------------------------------------------------------------------------*/
+.to-top {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("https://kulishetl.github.io/fe-core-hw/module-5/img/to-Top.png") no-repeat; 
+    border-radius: var(--bord-rad);
+    transition: 1s;
+}
+
+.to-top:hover {
+    opacity: 0.55;
+    transition: var(--tansition);
+    
+}
+.main h1 {
+    font-family: var(--font-3);
+    margin-top: -90px;
+}
+.bottom li {
+  color: white;
+}
+/*-------------------------------------------------------------------------------------*/
+.material-icons {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  color: #fff;
+}
+.imges li:hover > .material-icons {
+  display:block;
+}
+/*-------------------------------------------------------------------------------------*/
+h1 {
+    color: var(--color-1);
+}
+</style>
+</head>
+<body>
+        <div class="wrapper">
+                <header class="logo">journey</header>
+                <nav>
+                    <ul class="menu">
+                        <li class="item">
+                            <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Main/index.html">home</a>
+                        </li>
+                        <li class="item sub">
+                            <a class="link" href="../module-6/about">about</a>
+                            <ul class="sub-menu">
+                                <li class="sub-item">
+                                    <a class="sub-link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/About/index.html#">agency</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a class="sub-link" href="#">news</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a class="sub-link" href="#">team</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Gallery/index.html">gallery</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Tours/index.html">tours</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Blog/index.html">blog</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="file:///c%3A/Users/ASUS/Desktop/Homeworks/fe-core-2/module3/Contacts/index.html">contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+<div class="main">
+
+    
+<ul class="imges">
+    <li><h1>OUR GALLERY</h1></li>
+    <li><a href="#" class="img-link"></a>
+<li class="q"><img src="https://image.ibb.co/cjvBDG/layer_1.png" alt=""></li>
+<li class="w"><img src="https://image.ibb.co/gadnnb/layer_2.png" alt=""></li>
+<li class="e"><img src="https://image.ibb.co/fyaYSb/layer_3.png" alt=""></li>
+    
+</ul>
+
+
+<ul class="imges">
+        <li><a href="#" class="img-link"></a>
+<li class="r"><img src="https://image.ibb.co/jATJcb/layer_4.png" alt=""></li>
+<li class="t"><img src="https://image.ibb.co/eJ20qw/layer_5.png" alt=""></li>
+<li class="y"><img src="https://image.ibb.co/eDv07b/layer_6.png" alt=""></li>
+        
+</ul>
+
+<ul class="imges">
+        <li><a href="#" class="img-link"></a>
+<li class="u"><img src="https://image.ibb.co/jzBwfw/layer_7.png" alt=""></li>
+<li class="i"><img src="https://image.ibb.co/cf8L7b/layer_8.png" alt=""></li>
+<li class="o"><img src="https://image.ibb.co/j8RU0w/layer_9.png" alt=""></li>
+
+<li><i class="material-icons">zoom_in</i></li>
+</ul>
+
+    <a class="to-top" href="#"></a>
+
+    <div class="h-pad"> 
+    </div>
+
+     
+
+
+<div class="bottom">
+        <ul>
+          <li class="item-bottom"></li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul>
+            <li class="item-bottom"></li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul>
+            <li class="item-bottom"></li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul>
+            <li class="item-bottom"></li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>+380663056200</li>
+        </ul>
+</div>
+</div>
+
+
+    <div class="footter">
+        </div>
+            <ul class="sprite">
+                <li><a class="twitter" href="https://twitter.com"></a></li>
+                <li><a class="facebook" href="https://www.facebook.com"></a></li>
+                <li><a class="google" href="https://plus.google.com"></a></li>
+                <li><a class="in" href="#"></a></li>
+            </ul>
+        </div>
+</body>
+</html>
